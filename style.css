@@ -1,0 +1,186 @@
+* {
+	font-family: 'Montserrat', Sans-serif;
+}
+
+body {
+	background-image: url("https://i.imgur.com/hKxFbzy.png");
+	background-repeat: repeat;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.flex {
+	display: flex;
+	flex-grow: 1;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.align-items-end {
+	align-items: end;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.left-icon {
+	height: 100vh;
+	margin-left: 25%;
+	font-size: 400px;
+	animation-name: fadeIn;
+	animation-duration: 5s;
+}
+
+.left-icon .return {
+	position: absolute;
+	opacity: 0;
+	transition: opacity .5s, transform .5s;
+	transform: rotate(-180deg) scale(0.5);
+}
+
+.left-icon .icon {
+	position: absolute;
+	opacity: 100%;
+	transition: opacity .5s, transform .5s;
+}
+
+.left-icon .icon-wrapper {
+	cursor: pointer;
+	height: 400px;
+	width: 400px;
+}
+
+.left-icon .icon-wrapper:hover .return {
+	opacity: 100%;
+	transform: rotate(0deg) scale(1);
+	transition: all .5s;
+}
+
+.left-icon .icon-wrapper:hover .icon {
+	opacity: 0;
+	transform: rotate(180deg) scale(0.5);
+	transition: all .5s;
+}
+
+.main-content {
+	width: 66%;
+	margin-left: 33%;
+}
+
+.main-content .top-title {
+	font-size: 144px;
+	transform: skew(15deg);
+	font-weight: 600;
+	overflow: hidden;
+	margin-right: 10%;
+	animation-duration: 3s;
+	animation-name: slideup;
+	max-height: 170px;
+	position: absolute;
+	bottom: 50%;
+}
+
+.main-content .sep-line {
+	height: 16px;
+	width: 100%;
+	background-color: #212121;
+	transform: skew(35deg);
+	margin-right: -3%;
+	animation-duration: 1.5s;
+	animation-name: slidein;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.main-content .bottom-text {
+	margin-right: 10%;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 1px;
+	word-spacing: 7px;
+	margin-top: 36px;
+	overflow: hidden;
+	animation-duration: 5s;
+	animation-name: slidedown;
+	max-height: 53px;
+	animation-direction: alternate;
+	position: absolute;
+	top: 50%;
+}
+
+.footer {
+	flex-grow: 1;
+	position: absolute;
+	width: 100%;
+	bottom: 8px;
+}
+
+.footer .footer-item {
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.footer .footer-item:hover {
+	font-size: 18px;
+	transition: all .5;
+}
+
+@keyframes slidein {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes slideup {
+	from {
+		height: 0px;
+	}
+
+	50% {
+		height: 0px;
+	}
+
+	to {
+		height: 170px;
+	}
+}
+
+@keyframes slidedown {
+	from {
+		height: 0px;
+	}
+
+	50% {
+		height: 0px;
+	}
+
+	to {
+		height: 53px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	70% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 100%;
+	}
+}

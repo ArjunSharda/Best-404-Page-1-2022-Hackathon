@@ -1,0 +1,23 @@
+#screen {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+#title {
+  font: 5vmin 'Lucida Console', 'Monospace';
+  text-align: center;
+  margin-top: 40vh;
+  color: #FD4611;
+}
+
+#black {
+  background-color: #201421;
+}
+
+a:link { color: #FD4611; }
+a:visited { color: #FD4611; }

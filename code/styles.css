@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(218, 218, 218);
+}
+
+main {
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    /* background: linear-gradient(to right, #e0eafc, #cfdef3); */
+    margin: 1rem;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .7);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    box-shadow: rgb(158, 158, 158) 2px 2px;
+}
+
+.section1{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 > h1 {
+    font-size: 12rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #b92b27, #1565c0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text; /* Safari 4-5, Chrome 1-9 */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Chrome 16+, Firefox 20+ */
+    animation: bounce 15s ease-in infinite;
+}
+
+.section1 > p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section > p {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    /* text-transform: uppercase; */
+    /* animation: bounce 100s ease-in infinite; */
+}
+
+section > button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: rgb(40, 75, 75);
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-out;
+}
+
+section > button:hover {
+    transform: scale(1.03);
+}
+
+section > button:active {
+    transform: scale(0.99);
+}
+
+section > button > a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-10px);
+    }
+    20% {
+        transform: translateY(10px);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(10px);
+    }
+    70% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

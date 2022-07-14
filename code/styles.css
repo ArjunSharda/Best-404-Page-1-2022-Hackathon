@@ -140,4 +140,8 @@ section > button > a {
         padding: 1rem;
         align-items: center;
     }
+    .section1 > h1 {
+        font-size: 10rem;
+        font-weight: 900;
+    }
 }

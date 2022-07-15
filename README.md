@@ -1,3 +1,5 @@
+HACKATHON HAS CONCLUDED
+
 **PROJECT RULES**
 
 1. You must only make the website with HTML, CSS, and JS.

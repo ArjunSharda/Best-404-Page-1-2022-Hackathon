@@ -1,1 +1,1 @@
-@ArjunSharda - host
+@ArjunSharda - host entry for the hackathon
